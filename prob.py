@@ -11,7 +11,7 @@ average_time_to_death_in_days = 17.3
 
 
 def main():
-    for number_of_people in range(350, 1351, 100):
+    for number_of_people in [350, 700, 1400, 3500, 35000]:
         probability = probability_of_at_least_one_case(number_of_people)
         print(f'{number_of_people}\t{probability:0.2f}')
 
