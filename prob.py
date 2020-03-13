@@ -12,10 +12,10 @@ def deaths_to_true_cases(number_of_deaths):
     doubling_rate_in_days = 6.2
     average_time_to_death_in_days = 17.3
 
-    base_multiplier = 1 / fatality_rate
-    delay_factor = 2 ** (average_time_to_death_in_days / doubling_rate_in_days)
+    cases_to_deaths_factor = 1 / fatality_rate
+    time_from_initial_infection_to_death_factor = 2 ** (average_time_to_death_in_days / doubling_rate_in_days)
 
-    true_number_of_cases = number_of_deaths * base_multiplier * delay_factor
+    true_number_of_cases = number_of_deaths * cases_to_deaths_factor * time_from_initial_infection_to_death_factor
 
     return true_number_of_cases
 
