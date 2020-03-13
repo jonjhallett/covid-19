@@ -17,7 +17,7 @@ def main():
     print(f'{probability_of_at_least_one_case_in_ggs:0.2f}')
 
 def deaths_to_true_cases(number_of_deaths):
-    fatality_rate = 0.01
+    fatality_rate = 0.009
     doubling_rate_in_days = 6.2
     average_time_to_death_in_days = 17.3
 
