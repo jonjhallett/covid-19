@@ -30,7 +30,8 @@ def probability_of_at_least_one_case(number_of_people):
 
     probability_of_no_cases = 1
     for i in range(0, number_of_people):
-        probability_of_no_cases *= (population_of_uk - true_cases_in_uk - i) / (population_of_uk - i)
+        unsampled_population = population_of_uk - i
+        probability_of_no_cases *= (unsampled_population - true_cases_in_uk) / unsampled_population
 
     probability_of_at_least_one_case = 1 - probability_of_no_cases
     return probability_of_at_least_one_case
