@@ -4,11 +4,11 @@ import math
 
 def main():
     population_of_uk = 60000000
-    deaths_in_uk = 8
+    deaths_in_uk = 10
     true_cases_in_uk = deaths_to_true_cases(deaths_in_uk)
     print(f'True number of cases = {true_cases_in_uk:0.2f}')
 
-    number_people_in_ggs = 700
+    number_people_in_ggs = 350
     probability_of_no_cases_in_ggs = 1
     for i in range(0, number_people_in_ggs):
         probability_of_no_cases_in_ggs *= (population_of_uk - true_cases_in_uk - i) / (population_of_uk - i)
