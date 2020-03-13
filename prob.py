@@ -2,6 +2,9 @@
 
 import math
 
+population_of_uk = 66400000
+deaths_in_uk = 10
+
 def main():
     for number_of_people in range(350, 1351, 100):
         probability = probability_of_at_least_one_case(number_of_people)
@@ -20,8 +23,6 @@ def deaths_to_true_cases(number_of_deaths):
     return true_number_of_cases
 
 def probability_of_at_least_one_case(number_of_people):
-    population_of_uk = 66400000
-    deaths_in_uk = 10
     true_cases_in_uk = deaths_to_true_cases(deaths_in_uk)
 
     probability_of_no_cases = 1
