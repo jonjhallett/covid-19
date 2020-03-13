@@ -3,7 +3,7 @@
 import math
 
 def main():
-    population_of_uk = 60000000
+    population_of_uk = 66400000
     deaths_in_uk = 10
     true_cases_in_uk = deaths_to_true_cases(deaths_in_uk)
     print(f'True number of cases = {true_cases_in_uk:0.2f}')
@@ -19,7 +19,7 @@ def main():
 def deaths_to_true_cases(number_of_deaths):
     fatality_rate = 0.01
     doubling_rate_in_days = 6.2
-    average_time_to_death_in_days = 22
+    average_time_to_death_in_days = 17.3
 
     base_multiplier = 1 / fatality_rate
     delay_factor = 2 ** (average_time_to_death_in_days / doubling_rate_in_days)
