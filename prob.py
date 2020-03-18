@@ -2,7 +2,7 @@
 
 import math
 
-deaths_in_uk = 55
+deaths_in_uk = 71
 
 population_of_uk = 66400000
 fatality_rate = 0.009
