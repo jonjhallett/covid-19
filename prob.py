@@ -2,7 +2,7 @@
 
 import math
 
-deaths_in_uk = 4934
+deaths_in_uk = 5373
 
 population_of_uk = 66400000
 fatality_rate = 0.009
@@ -11,7 +11,7 @@ average_time_to_death_in_days = 17.3
 
 
 def main():
-    for number_of_people in [20, 30, 350, 700, 1400, 3500, 35000]:
+    for number_of_people in [3, 4, 6, 10, 20, 30, 350, 700, 1400, 3500, 35000]:
         probability = probability_of_at_least_one_case(number_of_people)
         print(f'{number_of_people}\t{probability:0.2f}')
 
