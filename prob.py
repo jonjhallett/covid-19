@@ -2,11 +2,11 @@
 
 import math
 
-deaths_in_uk = 5373
+deaths_in_uk = 5000
 
 population_of_uk = 66400000
 fatality_rate = 0.009
-doubling_rate_in_days = 6.2
+doubling_rate_in_days = 17
 average_time_to_death_in_days = 17.3
 
 
